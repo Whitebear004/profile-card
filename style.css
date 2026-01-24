@@ -1,59 +1,101 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Quicksand:wght@300..700&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;  
     list-style-type: none;
-    font-family:"Victor Crest";
+    font-family:"Kumbh Sans";
+   
 }  
+head{
+    overflow: hidden
+}
 body{
+    overflow: hidden;
     background-color:#19A1AE ;
 }
 main{
+    width: 100%;
+    height: 100vh;
     position: relative;
 }
 .circle1{
+     background: linear-gradient(
+        to right, 
+        rgba(9, 137, 180, 0.25) 0%, 
+        rgba(83, 255, 238, 0.25) 100%
+        );
     left: -15%;
-    top: -40%;
+    top: -500px;
     position: absolute;
     z-index: -1;
     overflow: hidden;
     width: 978px;
     height: 979px; ;
-    background-color:#53FFEE ;
+    /* background-color:#53FFEE ; */
     border-radius:50%  ;
-    border:2px solid #53FFEE;
+    border:0px solid #53FFEE;
 }
 .circle2{
-    left: -500px;
-    bottom:-500px ;
+    right: -15%;
+    position: absolute;
     z-index: -1;
-    overflow: hidden;
     width: 978px;
     height: 979px; ;
-    background-color:#53FFEE ;
+    background: linear-gradient(
+        to right,  
+        rgba(9, 137, 180, 0.25) 0%,
+        rgba(83, 255, 238, 0.25) 100%
+       
+        );
     border-radius:50%  ;
-    border:2px solid #53FFEE;
+    border:0px solid #53FFEE;
 }
 
 .profile-card{
-    border-radius: 20   px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
     position: relative;
-    top: 173px;
-   left: 545px;
-   height: 545PX;
-   width: 350px;
+    top: 200px;
+    left: 545px;
+    height: 340PX;
+    width: 350px;
    
 }
 .cover{
     border-radius: 20px 20px 0px 0px;
-    background-color: aquamarine;
+    background-color: #41CBD3;
     width: 350px;
     height: 144px;
    }
+.bio{
+    position: relative;
+    text-align: center;
+    background-color: #FFFFFF;
+   h1{
+    position:relative;
+    bottom: 50px;
+    display: inline-block;
+    color:#2E3349;
+    font-weight: 700;
+    font-size: 18px;
+    font-family:"Kumbh Sans";
+   }
+   span{
+       font-size:18px ;
+       color: #6B7082;
+       font-weight: 400;
+   }
+   p{
+      color: #6B7082;
+      position: relative;
+      bottom: 50px;
+   }
+}
 .img{
+     background-color: #FFFFFF;
     >img{
     position: relative;
     left:127px;
@@ -66,4 +108,36 @@ main{
     }
     
     
+}
+
+.stats{
+    bottom: 10px;
+    position: relative;
+    .stat-item{
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        bottom: 20px;;
+        span{
+            padding-left: 10px; ;
+            /* position: relative; */
+            color: #2E3349;
+            font-size: 18px;
+            font-weight: 700;
+            margin-left: 20px;
+            margin-right: 25px;
+        }
+        p{
+           padding-left: 10px; ;
+           margin-right: 25px;
+           margin-left:25px;
+           color: #6B7082;
+           left: 20px;
+        }
+    }
+}
+
+.cover{
+
+    background-image: url(./assets/Oval.svg);
 }
